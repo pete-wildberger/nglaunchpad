@@ -7,8 +7,15 @@ console.log('NG');
 var vm = this;
 
 vm.testClick = function(){
+
+  if(vm.userInput === '' || vm.userInput === undefined) {
+    vm.output = '';
+
+  } else {
   vm.output = ('you typed:' +  vm.userInput);
   console.log('you typed:', vm.userInput);
+}
+vm.userInput = '';
 };
 
 });
