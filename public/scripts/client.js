@@ -4,6 +4,11 @@ var myApp = angular.module( 'myApp', []);
 ///add controller to myApp
 myApp.controller('angularintro', function(){
 console.log('NG');
+var vm = this;
+
+vm.testClick = function(){
+  console.log('hey you clicked on something');
+};
 
 });
 
