@@ -10,10 +10,13 @@
   <body ng-app = 'myApp'>
     HELLO
     <div ng-controller = 'angularintro as ai'>
-      <input type='text' ng-model='ai.userInput'/>
-      <button ng-click='ai.testClick()'>Test</button>
-      <p>
-        {{ ai.output }}
+      <input type='number' ng-model='ai.yearIn' placeholder="year"/>
+      <input type='text' ng-model='ai.makeIn' placeholder="make"/>
+      <input type='text' ng-model='ai.modelIn' placeholder="model"/>
+      <input type='number' ng-model='ai.costIn' placeholder="cost"/>
+      <button ng-click='ai.addCar()'>Add Car</button>
+      <p ng-repeat='cars in ai.cars'>
+        {{ cars.model }} {{ cars.make }} {{ cars.model }} ${{ cars.cost }}
       </p>
 
 
