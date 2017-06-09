@@ -5,8 +5,9 @@ var myApp = angular.module( 'myApp', []);
 myApp.controller('angularintro', function(){
 console.log('NG');
 var vm = this;
+vm.showFront = false;
 
-vm.testClick = function(){
+  vm.testClick = function(){
 
   if(vm.userInput === '' || vm.userInput === undefined) {
     vm.output = '';
@@ -16,6 +17,9 @@ vm.testClick = function(){
   console.log('you typed:', vm.userInput);
 }
 vm.userInput = '';
+};
+vm.toggleShow = function(){
+  vm.showFront = !vm.showFront;
 };
 
 });

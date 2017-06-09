@@ -12,7 +12,13 @@
     <div ng-controller = 'angularintro as ai'>
       <input type='text' ng-model='ai.userInput'/>
       <button ng-click='ai.testClick()'>Test</button>
-      <p>{{ ai.output }}</p>
+      <p>
+        {{ ai.output }}
+      </p>
+
+
+      <h2 ng-show='ai.showFront' ng-click='ai.toggleShow()'>FRONT</h2>
+      <h2 ng-hide='ai.showFront' ng-click='ai.toggleShow()'>BACK</h2>
 
     </div>
   </body>
