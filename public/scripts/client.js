@@ -7,6 +7,7 @@ console.log('NG');
 var vm = this;
 
 vm.testClick = function(){
+  vm.output = ('you typed:' +  vm.userInput);
   console.log('you typed:', vm.userInput);
 };
 

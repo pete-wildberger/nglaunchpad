@@ -10,8 +10,10 @@
   <body ng-app = 'myApp'>
     HELLO
     <div ng-controller = 'angularintro as ai'>
-      <input type='text' ng-model='ai.userInput'/>{{ userInput }}
+      <input type='text' ng-model='ai.userInput'/>
       <button ng-click='ai.testClick()'>Test</button>
+      <p>{{ ai.output }}</p>
+
     </div>
   </body>
 </html>
